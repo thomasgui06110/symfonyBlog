@@ -7,6 +7,7 @@
 
 {{ form_start(formArticle) }}
 
+{{ form_error(formArticle.title) }}
 {{ form_row(formArticle.title, {'attr' : {'placeholder': "Titre de l'aticle"}}) }}
 
 {{ form_row(formArticle.content, {'attr' : {'placeholder': "Contenu de l'aticle"}}) }}
