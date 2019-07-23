@@ -7,9 +7,9 @@
 
 {{ form_start(formArticle) }}
 
-{{ form_error(formArticle.title) }}
+{{ form_errors(formArticle.title) }}
 {{ form_row(formArticle.title, {'attr' : {'placeholder': "Titre de l'aticle"}}) }}
-
+{{ form_row(formArticle.category) }}
 {{ form_row(formArticle.content, {'attr' : {'placeholder': "Contenu de l'aticle"}}) }}
 
 {{ form_row(formArticle.image, {'attr' : {'placeholder': "URL photo"}}) }}
